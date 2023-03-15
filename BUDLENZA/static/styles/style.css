@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 :root {
-  --color-main: #71c6dd;
+  --color-main: #B5E48C;
   --color-main-light: #e1f6fb;
-  --color-dark: #3f4156;
-  --color-dark-medium: #51546e;
-  --color-dark-light: #696d97;
+  --color-dark: #1a1e20;
+  --color-dark-medium: #868e96;
+  --color-dark-light: #495057;
   --color-light: #e5e5e5;
-  --color-gray: #8b8b8b;
+  --color-gray: #212529;
   --color-light-gray: #b2bdbd;
-  --color-bg: #2d2d39;
+  --color-bg: #000;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
 }
@@ -86,6 +86,7 @@ a {
 .btn--link {
   border-radius: 0;
   padding: 0;
+  margin-left: 2rem;
   color: var(--color-main);
   box-shadow: none;
 }
@@ -94,10 +95,16 @@ a {
   text-decoration: underline;
 }
 
+
+
 .btn--main {
-  background-color: var(--color-main);
-  color: var(--color-dark);
+  position: relative;
+  border: 2px solid var(--color-main);
+  color: var(--color-main);
+  border-radius: 1rem;
 }
+
+
 
 .btn:hover {
   opacity: 0.9;
@@ -272,7 +279,8 @@ a {
 
 .header > .container {
   display: flex;
-  gap: 9.5rem;
+  justify-content: space-between;
+  
 }
 
 .header__logo,
@@ -294,23 +302,23 @@ a {
 }
 
 .header__search > label {
-  background-color: var(--color-dark-medium);
+  background-color: #000;
   padding: 1.3rem 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  border-radius: 4px;
+  gap: 1.5rem;
+  border-radius: 1.3rem;
 }
 
 .header__search svg {
-  fill: var(--color-gray);
+  fill: #999;
   width: 2rem;
   height: 2rem;
   margin-left: 1rem;
 }
 
 .header__search input {
-  width: 30rem;
+  width: 50rem;
   background: transparent;
   border: none;
   outline: none;
@@ -340,7 +348,7 @@ a {
 }
 
 .header__menu {
-  margin-left: auto;
+  
   position: relative;
 }
 
@@ -573,23 +581,24 @@ a {
 .topics__list li a {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
-  font-weight: 500;
+  align-items: center;
+  margin-bottom: 2rem;
   color: var(--color-light-gray);
   transition: all 0.3s ease-in-out;
+  border-radius: 1.3rem;
+  padding: 1.3rem 2rem;
+  
 }
 
 .topics__list li a.active,
 .topics__list li a:hover {
-  color: var(--color-main);
+  color: #000;
+  background-color: var(--color-main);
+  
 }
 
 .topics__list li a span {
-  padding: 0.5rem 1rem;
-  background-color: var(--color-dark);
-  border-radius: 3px;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
@@ -643,8 +652,12 @@ a {
 .roomListRoom {
   margin-bottom: 2.4rem;
   background-color: var(--color-dark);
-  border-radius: 1rem;
+  border-radius: 1.3rem;
   padding: 2rem;
+}
+.roomListRoom:hover{
+  transform: translateY(-1.2rem);
+  transition: 0.5s ease-in-out;
 }
 
 .roomListRoom__header {
@@ -696,7 +709,7 @@ a {
 }
 
 .roomListRoom__meta {
-  border-top: 1px solid var(--color-dark-medium);
+  border-top: 0.2px solid var(--color-dark-medium);
   padding-top: 1rem;
   display: flex;
   align-items: center;
@@ -719,9 +732,10 @@ a {
 }
 
 .roomListRoom__topic {
-  padding: 5px 1.5rem;
-  background-color: var(--color-dark-medium);
-  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ee4266;
+  color: white;
+  border-radius: 1rem;
   font-weight: 500;
   font-size: 1.3rem;
 }
@@ -747,10 +761,11 @@ a {
 }
 
 .activities__box {
-  margin: 1.5rem;
+  margin: 1.8rem;
   padding: 1.5rem;
-  border: 2px solid var(--color-dark-medium);
-  border-radius: 5px;
+  color: white;
+  background-color: #c89ae0;
+  border-radius: 1.3rem;
 }
 
 .activities__boxHeader p {
@@ -779,7 +794,7 @@ a {
 .activities__boxRoomContent {
   background: var(--color-bg);
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 1rem;
   margin-top: 1rem;
   margin-left: -4.2rem;
 }
@@ -1003,6 +1018,7 @@ a {
 .room__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .room__info h3 {
