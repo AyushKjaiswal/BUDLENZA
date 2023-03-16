@@ -12,6 +12,7 @@
   --color-bg: #000;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
+  --radius: 1.3rem
 }
 
 /*========== base styles ==========*/
@@ -764,7 +765,7 @@ a {
   margin: 1.8rem;
   padding: 1.5rem;
   color: white;
-  background-color: #c89ae0;
+  /* background-color: #495057; */
   border-radius: 1.3rem;
 }
 
