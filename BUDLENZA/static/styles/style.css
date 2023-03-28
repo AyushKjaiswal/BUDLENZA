@@ -10,7 +10,7 @@
   --color-light: #e5e5e5;
   --color-gray: #212529;
   --color-light-gray: #b2bdbd;
-  --color-bg: #000;
+  --color-bg: #000000;
   --color-success: #5dd693;
   --color-error: #fc4b0b;
   --radius: 1.3rem
@@ -633,7 +633,12 @@ a {
 /*==============================
 =>  Room List
 ================================*/
-
+.roomList {
+  display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 4rem;
+}
 .roomList__header {
   display: flex;
   justify-content: space-between;
